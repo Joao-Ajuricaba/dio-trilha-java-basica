@@ -1,18 +1,72 @@
-## Getting Started
+<h1 align="center"> Controle de Fluxo em Java ☭ </h1>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+<p>
+    Neste exemplo veremos exemplos sobre controle de fluxo em java
 
-The workspace contains two folders by default, where:
+    Exemplo Switch Case: 
+    public class SistemaMedida {
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    public static void main(String[] args) {
+        
+        String sigla = "GG";
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+        switch(sigla){
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+            case "M":
+                System.out.println("Tamanho Médio");
 
-## Dependency Management
+                break;
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+            case "P":
+                System.out.println("Tamanho Pequeno");
+
+                break;
+
+            case "G":
+                System.out.println("Tamanho Grande");
+
+                break;
+
+            default:
+                System.out.println("Tamanho não definido");
+
+            
+        }
+
+
+    }
+    
+}
+
+</p>
+
+<p>
+
+Exemplo : encadeado
+
+Mais um exemplo de controle de fluxo.
+
+
+public class ResultadoEscolar {
+
+    public static void main(String[] args) {
+        int nota = 8;
+
+        if(nota >= 7)
+
+                System.out.println("Aprovado");
+
+            else if(nota >= 5 && nota < 7){
+
+                System.out.println("Recuperação");
+
+            }else
+
+                System.out.println("Reprovado");
+    }
+    
+}
+
+</p>
+
